@@ -15,7 +15,55 @@ h1 {
 }
 
 footer {
+  left: 25px;
   text-align: right;
   color: midnightblue;
 }
+.tile-image
+{
+  width:200px;
+  float:left;
+  margin-right:50px;
 
+}
+.card
+{
+  width:45%
+}
+.left
+{
+  float:right;
+}
+.right
+{
+  float:left;
+}
+.creative
+{
+  color:gold
+}
+@media (max-width:600)
+{
+.logo
+{
+  width:100px;
+}
+h1 
+{
+  font-size: 3rem;
+  text-align: center;
+}
+.card{
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+.card img
+{
+  margin-bottom: 10px;
+  width:100%;
+  display:inline;
+  object-fit: cover;
+}
+}
