@@ -32,41 +32,281 @@
       }
     }
 
-    .icon-square {
-      width: 3rem;
-      height: 3rem;
+    .feature-icon {
+      width: 4rem;
+      height: 4rem;
       border-radius: 0.75rem;
     }
   </style>
   <body>
     <section id="navbar">
       <header
-        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+        class="d-flex flex-wrap justify-content-center py-3 mx-5 mb-4 border-bottom"
       >
         <a
+          style="font-weight: 900"
           href="/"
           class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
         >
-          <svg class="bi me-2" width="40" height="32" aria-hidden="true">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-          <span class="fs-4">Simple header</span>
+          <img src="./images/Logo.bmp" height="40" width="40" class="me-3" />
+          <span class="fs-4 log">Radha Printers & Binders</span>
         </a>
+
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">Home</a>
+            <a href="./index.html" class="nav-link active" aria-current="page">Home</a>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="./about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Printing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Binding</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Stationery</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
         </ul>
       </header>
     </section>
-    <section id="hero"></section>
-    <section id="navbar"></section>
-    <section id="navbar"></section>
-    <section id="navbar"></section>
+    <section id="hero">
+      <div style="margin: 20px">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="./images/Then vs now.png"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              height="300"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              A Legacy of Quality Printing. A Tradition of Trust.
+            </h1>
+            <p class="lead">
+              Serving students, businesses, and families for over 40 years. From
+              precision printing to expert binding, we deliver excellence in
+              every job we undertake.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                Primary
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg px-4"
+              >
+                Default
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">
+          Complete Solutions: Print, Bind, & Supply
+        </h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-printer"
+                viewBox="0 0 16 16"
+              >
+                <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1" />
+                <path
+                  d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1"
+                />
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Precision Printing Services</h3>
+            <p>
+              From high-volume documentation to vibrant commercial materials, we
+              handle every print job with speed and absolute clarity. Whether
+              it's for business branding or educational needs, we ensure your
+              work looks professional on paper.
+            </p>
+            <a href="#" class="icon-link">
+              View Printing Options
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-book"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"
+                />
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Expert Binding & Finishing</h3>
+            <p>
+              Preserve your hard work with binding that lasts. We combine
+              traditional techniques with modern durability to give your
+              reports, theses, and documents the premium finish they deserve.
+            </p>
+            <a href="#" class="icon-link">
+              See Binding Styles
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-pen"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z"
+                />
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Stationery Supplies</h3>
+            <p>
+              Located conveniently in-store, we offer a curated selection of
+              essential supplies. From school projects to office organization,
+              find the right tools to bring your ideas to life instantly.
+            </p>
+            <a href="#" class="icon-link">
+              Browse Stationery
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-us">
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal text-body-emphasis">Why Choose Us ?</h1>
+      </div>
+      <div style="margin: 20px">
+        <main>
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-bg-primary border-primary">
+                  <h4 class="my-0 fw-normal">Years of Mastery</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                    40+<small class="text-body-secondary fw-light">Years</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Deep Roots</li>
+                    <li>Established Trust</li>
+                    <li>Expert Hands</li>
+                    <li>Official Standards</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-bg-primary border-primary">
+                  <h4 class="my-0 fw-normal">Commitment to Quality</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                    100<small class="text-body-secondary fw-light">%</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Precision Printing</li>
+                    <li>Durable Binding</li>
+                    <li>Premium Materials</li>
+                    <li>Attention to Detail</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-bg-primary border-primary">
+                  <h4 class="my-0 fw-normal">Complete Convenience</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                    4-in-1<small class="text-body-secondary fw-light"></small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>All Under One Roof</li>
+                    <li>Speed & Efficiency</li>
+                    <li>Friendly Support</li>
+                    <li>Fair Pricing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+    <section id="foot">
+      <div style="margin: 15px">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        >
+          <p class="col-md-4 mb-0 text-body-secondary">© 2025 Company, Inc</p>
+          <a
+            href="/"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+            aria-label="Bootstrap"
+          >
+            <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <ul class="nav col-md-4 justify-content-end">
+            <!-- <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+            </li> -->
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-body-secondary">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-body-secondary">Printing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-body-secondary">Binding</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-body-secondary">Stationery</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-body-secondary">Contact Us</a>
+            </li>
+            
+          </ul>
+        </footer>
+      </div>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
